@@ -1,0 +1,43 @@
+.header {
+    position: sticky; /* Making the header always stick on the top */
+    top: 0;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly; /* 50% of viewport for each left and right headers and also makes it responsive */
+    border-bottom: 0.1px solid lightgray;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header__left {
+    display: flex;
+}
+
+.header__left > img {
+    /* keeps the aspect ratio */
+    object-fit: contain;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header__search {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    color: gray;
+    background-color: #eef3f8;
+}
+
+.header__search > input {
+    outline: none;  /* remove the outline when typing*/
+    border: none;
+    background: none;
+}
+
+.header__right {
+    /* Display of flex by defaul put things in a row */
+    display: flex;  
+}
